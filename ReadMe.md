@@ -12,12 +12,13 @@ This project automates the HamroBazar website using Selenium WebDriver, integrat
 6. [Sample Test Data](#Sample-Test-Data)
 
 ## Features
-- Automated product search and filtering
-- CSV file generation for search results and storage in Search_Result.csv with tabular view in Search_Result.html
+- Automated product search and filtering.
+- CSV file of total filtered product response is stored in file all_filtered_data.csv.
+- CSV file generation for search results of top 50 sorted products and storage in Search_Result.csv with tabular view in Search_Result.html.
 - ExtentReports for report generation stored in the test-output/ExtentReports folder.
 - Screenshots of Failed testcases stored in the test-output/ExtentReports/Screenshots folder.
 - Configuration settings retrieved from config.properties.
-- Test data fetched from testdata.properties
+- Test data fetched from testdata.properties.
 
 ## Prerequisites
 - Java JDK 21
