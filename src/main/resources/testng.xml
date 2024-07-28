@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="listener.MyListener"> </listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="HamroBazaar Automation">
+        <classes>
+            <class name="testcases.HomePageTestCase">
+                <methods>
+                    <include name="verifySearchMonitor"/>
+                    <include name="verifyFailedCaseToDemonstrateScreenshotCapture"/>
+                </methods>
+            </class>
+            <class name="testcases.FilterTestCase">
+                <methods>
+                    <include name="verifyResetFilterButtonVisibility"/></methods>
+            </class>
+            <class name="testcases.ProductTestCase">
+                <methods>
+                    <include name="fetchTop50Product_SortedByPrice"/>
+                    <include name="fetchAllFilteredProduct"/>
+                </methods></class>
+
+        </classes>
+    </test>
+</suite>
