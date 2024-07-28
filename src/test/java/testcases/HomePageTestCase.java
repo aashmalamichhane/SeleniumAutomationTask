@@ -31,7 +31,7 @@ public class HomePageTestCase extends Base {
         driver.quit();
     }
 
-    @Test
+    @Test(priority = 1)
     public void verifySearchMonitor() {
         WebElement searchHeading = productPage.getSearchHeading();
         String actSearchResultText = searchHeading.getText();
@@ -41,7 +41,7 @@ public class HomePageTestCase extends Base {
 
     //This method is created to show that screenshots will be taken in case of failed cases.
     //This test is supposed to be failed.
-    @Test
+    @Test(priority = 2)
     public void verifyFailedCaseToDemonstrateScreenshotCapture() {
         WebElement searchHeading = productPage.getSearchHeading();
         String actSearchResultText = searchHeading.getText();
